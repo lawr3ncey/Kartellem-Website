@@ -39,13 +39,20 @@ export default function Footer() {
           <div>
             <h4 className="text-xs tracking-[0.2em] text-white mb-4 font-[family-name:var(--font-mono)]">NAVIGATE</h4>
             <div className="flex flex-col gap-2">
-              {["HOME", "DROPS", "ROSTER", "CYPHER", "ABOUT"].map((link) => (
+              {[
+                { label: "HOME", href: "/" },
+                { label: "DROPS", href: "/#drops" },
+                { label: "MUSIC", href: "/music" },
+                { label: "STORY", href: "/story" },
+                { label: "ROSTER", href: "/#roster" },
+                { label: "ABOUT", href: "/#about" },
+              ].map((link) => (
                 <Link
-                  key={link}
-                  href={`/#${link.toLowerCase()}`}
+                  key={link.label}
+                  href={link.href}
                   className="text-xs text-gray-mid hover:text-white transition-colors font-[family-name:var(--font-mono)]"
                 >
-                  {link}
+                  {link.label}
                 </Link>
               ))}
             </div>
