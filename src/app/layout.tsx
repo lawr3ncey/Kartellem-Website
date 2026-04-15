@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     siteName: "KARTELLEM",
     images: [
       {
-        url: "https://kartellem.devrence.com/opengraph-image",
+        url: "https://kartellem.devrence.com/images/tellem-logo-blackbg.png",
         width: 1200,
-        height: 630,
+        height: 1200,
         alt: "KARTELLEM — Manila Underground Collective",
       },
     ],
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "KARTELLEM — Manila Underground Collective",
     description:
       "Born from the underground. Built for the streets. KARTELLEM is Manila's finest hip-hop collective and streetwear brand.",
-    images: ["https://kartellem.devrence.com/opengraph-image"],
+    images: ["https://kartellem.devrence.com/images/tellem-logo-blackbg.png"],
   },
 };
 
